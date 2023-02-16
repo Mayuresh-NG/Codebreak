@@ -2,6 +2,8 @@ import 'package:codebreakk/screens/vehicles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'dr.dart';
+
 class SecondScreen extends StatelessWidget {
   const SecondScreen({super.key});
 
@@ -67,6 +69,18 @@ class SecondScreen extends StatelessWidget {
               onTap: () {
                 // Update the state of the app.
                 // ...
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.account_box_outlined, color: Colors.black,),
+              title: const Text('Driver details'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Assigned(),
+                  ),
+                );
               },
             ),
             ListTile(
@@ -148,6 +162,7 @@ class SecondScreen extends StatelessWidget {
       //
       ],
     ),
+
     );
   }
 }

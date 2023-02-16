@@ -1,6 +1,7 @@
 import 'package:codebreakk/screens/HomeScreen.dart';
 import 'package:codebreakk/screens/Main.dart';
 import 'package:codebreakk/screens/dashboard.dart';
+import 'package:codebreakk/screens/dr.dart';
 import 'package:codebreakk/screens/login_screen.dart';
 import 'package:codebreakk/screens/stats.dart';
 import 'package:codebreakk/screens/vehicles.dart';
@@ -23,6 +24,8 @@ void main() {
         '/dashboard': (context) => const Dashboard(),
         '/stats': (context) => const Stats(),
         '/vehicles': (context) =>  Vehicle(),
+        '/assign': (context) =>  Assigned(),
+
       },
     ),
   );
